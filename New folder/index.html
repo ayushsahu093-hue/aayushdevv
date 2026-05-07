@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Sahu - Portfolio '26</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Lilita+One&family=Inter:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="cursor-aura"></div>
+
+    <!-- Stellar Background -->
+    <div class="stellar-background">
+        <div class="star-layer"></div>
+        <div class="star-layer-alt"></div>
+        <div class="violet-star vs-1"></div>
+        <div class="violet-star vs-2"></div>
+        <div class="violet-star vs-3"></div>
+    </div>
+
+
+    <div class="background-texture"></div>
+
+    <!-- Glassmorphism Navbar -->
+    <nav class="glass-navbar">
+        <a href="#" class="nav-logo" title="Back to top">
+            <img src="./assets/myavatar2.jpeg" alt="Avatar Logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="blog.html" class="transition-link">Blog</a></li>
+            <li><a href="services.html" class="transition-link">Services</a></li>
+            <li><a href="#" class="open-contact-modal"
+                    onclick="event.preventDefault(); document.getElementById('contact-modal').classList.add('active');">Contact</a>
+            </li>
+        </ul>
+        <div class="nav-action">
+            <a href="https://github.com/ayushsahu093-hue" target="_blank" class="github-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+                GitHub
+            </a>
+        </div>
+    </nav>
+
+    <section class="hero-section" id="home">
+        <div class="main-container">
+            <!-- Floating Stars -->
+            <!-- Purple/Lime Gradient Star -->
+            <svg class="star star-1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#a66ef5" />
+                        <stop offset="100%" stop-color="#b2d235" />
+                    </linearGradient>
+                </defs>
+                <g fill="url(#grad1)" transform="translate(50,50)">
+                    <rect x="-10" y="-45" width="20" height="90" rx="10" />
+                    <rect x="-10" y="-45" width="20" height="90" rx="10" transform="rotate(60)" />
+                    <rect x="-10" y="-45" width="20" height="90" rx="10" transform="rotate(120)" />
+                </g>
+            </svg>
+
+            <!-- Giant PORTFOLIO Text -->
+            <h1 class="giant-text">
+                <span class="l-p">P</span>
+                <span class="l-o1">O</span>
+                <span class="l-r">R</span>
+                <span class="l-t">T</span>
+                <span class="l-f">F</span>
+                <span class="l-o2">O</span>
+                <span class="l-l">L</span>
+                <span class="l-i">I</span>
+                <span class="l-o3">O</span>
+                <span class="year-text">'26</span>
+            </h1>
+
+            <!-- Avatar shadow -->
+            <div class="avatar-shadow"></div>
+
+            <!-- Central Avatar -->
+            <img src="./assets/myavatar.png" alt="Ayush Avatar" class="hero-avatar" />
+
+            <!-- Name Text -->
+            <div class="name-text">AYUSH SAHU</div>
+
+            <!-- Glassmorphism Card -->
+            <div class="glass-card">
+                <ul>
+                    <li>Frontend Development</li>
+                    <li>Landing Page Creation</li>
+                    <li>Portfolio Websites</li>
+                    <li>Responsive Design</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Green Section with Torn Edge -->
+        <div class="green-section-wrapper">
+            <div class="torn-edge"></div>
+            <div class="green-section">
+
+                <!-- White Star (inside green section) -->
+                <svg class="star star-3" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="#ffffff" transform="translate(50,50)">
+                        <rect x="-10" y="-45" width="20" height="90" rx="10" />
+                        <rect x="-10" y="-45" width="20" height="90" rx="10" transform="rotate(60)" />
+                        <rect x="-10" y="-45" width="20" height="90" rx="10" transform="rotate(120)" />
+                    </g>
+                </svg>
+
+                <div class="buttons-container">
+                    <a href="#projects" class="glass-button">VIEW MY WORK</a>
+                    <button class="glass-button open-contact-modal"
+                        onclick="document.getElementById('contact-modal').classList.add('active');">CONTACT ME</button>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <!-- Floating Purple Star -->
+        <svg class="star star-4" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#a66ef5" transform="translate(50,50)">
+                <rect x="-10" y="-45" width="20" height="90" rx="10" />
+                <rect x="-10" y="-45" width="20" height="90" rx="10" transform="rotate(60)" />
+                <rect x="-10" y="-45" width="20" height="90" rx="10" transform="rotate(120)" />
+            </g>
+        </svg>
+
+        <div class="about-container">
+            <!-- ID Card Left Side -->
+            <div class="id-card-wrapper reveal-on-scroll reveal-left">
+                <div class="lanyard">
+                    <div class="lanyard-clip"></div>
+                </div>
+                <div class="id-card">
+                    <div class="id-card-top"></div>
+                    <div class="id-card-header">
+                        <span class="id-logo">AYUSH</span>
+                        <span class="id-title">DEV</span>
+                    </div>
+                    <div class="id-photo-container">
+                        <img src="./assets/myavatar3.png" alt="Ayush Avatar" class="id-photo">
+                    </div>
+                    <div class="id-card-details">
+                        <h3>Ayush Sahu</h3>
+                        <p>Frontend Dev</p>
+                        <div class="barcode-container">
+                            <svg class="barcode-svg" viewBox="0 0 100 30" width="100%" height="24">
+                                <rect x="0" y="0" width="3" height="30" fill="#1f2937" />
+                                <rect x="5" y="0" width="1" height="30" fill="#1f2937" />
+                                <rect x="8" y="0" width="4" height="30" fill="#1f2937" />
+                                <rect x="14" y="0" width="2" height="30" fill="#1f2937" />
+                                <rect x="18" y="0" width="1" height="30" fill="#1f2937" />
+                                <rect x="22" y="0" width="5" height="30" fill="#1f2937" />
+                                <rect x="29" y="0" width="2" height="30" fill="#1f2937" />
+                                <rect x="33" y="0" width="3" height="30" fill="#1f2937" />
+                                <rect x="38" y="0" width="1" height="30" fill="#1f2937" />
+                                <rect x="42" y="0" width="4" height="30" fill="#1f2937" />
+                                <rect x="48" y="0" width="2" height="30" fill="#1f2937" />
+                                <rect x="52" y="0" width="3" height="30" fill="#1f2937" />
+                                <rect x="57" y="0" width="1" height="30" fill="#1f2937" />
+                                <rect x="61" y="0" width="5" height="30" fill="#1f2937" />
+                                <rect x="68" y="0" width="2" height="30" fill="#1f2937" />
+                                <rect x="72" y="0" width="1" height="30" fill="#1f2937" />
+                                <rect x="75" y="0" width="4" height="30" fill="#1f2937" />
+                                <rect x="81" y="0" width="2" height="30" fill="#1f2937" />
+                                <rect x="85" y="0" width="3" height="30" fill="#1f2937" />
+                                <rect x="90" y="0" width="1" height="30" fill="#1f2937" />
+                                <rect x="93" y="0" width="4" height="30" fill="#1f2937" />
+                                <rect x="98" y="0" width="2" height="30" fill="#1f2937" />
+                            </svg>
+                            <span class="id-number">ID: AS-2026-BCA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Content Right Side -->
+            <div class="about-content reveal-on-scroll reveal-right">
+                <h2 class="about-title">Hello<span class="exclamation">!</span></h2>
+                <p class="about-desc">
+                    Hi, I’m <span class="signature">Ayush Sahu</span> — a BCA student from Indore with a passion for
+                    building clean, responsive frontend interfaces. I focus on creating user-friendly, visually engaging
+                    websites that work seamlessly across devices. Always learning, always improving, and driven to turn
+                    ideas into smooth digital experiences.
+                </p>
+
+                <div class="about-grid">
+                    <!-- Education -->
+                    <div class="grid-item">
+                        <h3>Education</h3>
+                        <div class="info-block">
+                            <h4>BCA</h4>
+                            <p>Oriental University, Indore</p>
+                            <p class="year">2025 - 2028</p>
+                        </div>
+                    </div>
+
+                    <!-- Contact -->
+                    <div class="grid-item">
+                        <h3>Contact</h3>
+                        <ul class="contact-list">
+                            <li><span class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22"
+                                        height="22" viewBox="0 0 24 24" fill="#EA4335">
+                                        <path
+                                            d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.866l5.6-6.812zm9.201-1.451l4.623-3.747v9.458l-4.623-5.711z" />
+                                    </svg></span> <a href="mailto:Ayushsahu093@gmail.com"
+                                    style="color: inherit; text-decoration: none;">Ayushsahu093@gmail.com</a></li>
+                            <li><span class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22"
+                                        height="22" viewBox="0 0 24 24" fill="#0A66C2">
+                                        <path
+                                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                    </svg></span> <a href="https://www.linkedin.com/in/aayushsahu2007/" target="_blank"
+                                    style="color: inherit; text-decoration: none;">LinkedIn</a></li>
+                            <li><span class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22"
+                                        height="22" viewBox="0 0 24 24">
+                                        <defs>
+                                            <linearGradient id="ig-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+                                                <stop offset="0%" stop-color="#fd5949" />
+                                                <stop offset="50%" stop-color="#d6249f" />
+                                                <stop offset="100%" stop-color="#285AEB" />
+                                            </linearGradient>
+                                        </defs>
+                                        <path fill="url(#ig-grad)"
+                                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm3.98-10.869a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z" />
+                                    </svg></span> <a href="https://www.instagram.com/aayxshhh._/" target="_blank"
+                                    style="color: inherit; text-decoration: none;">Instagram</a></li>
+                            <li><span class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22"
+                                        height="22" viewBox="0 0 24 24" fill="#181717">
+                                        <path
+                                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                    </svg></span> <a href="https://github.com/ayushsahu093-hue" target="_blank"
+                                    style="color: inherit; text-decoration: none;">GitHub</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Skills -->
+                    <div class="grid-item">
+                        <h3>Skills</h3>
+                        <p>Python (Pandas, NumPy)</p>
+                        <p>HTML / CSS / JavaScript</p>
+                        <p>C++</p>
+                        <p>Prompt Engineering</p>
+                        <p>Frontend Development</p>
+                        <p>Graphic Design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-torn-edge"></div>
+    </section>
+
+    <!-- Contact Modal -->
+    <div class="contact-modal-overlay" id="contact-modal">
+        <div class="contact-modal-content">
+            <button class="close-modal"
+                onclick="document.getElementById('contact-modal').classList.remove('active');">&times;</button>
+
+            <div class="modal-profile">
+                <img src="./assets/myavatar2.jpeg" alt="Ayush Sahu" class="modal-avatar">
+                <div class="modal-availability">
+                    <span class="status-dot"></span>
+                    Available for work
+                </div>
+            </div>
+
+            <div class="modal-header">
+                <h2>Connect With Me</h2>
+                <p>I'd be happy to connect. Choose your preferred platform:</p>
+            </div>
+
+            <div class="modal-options">
+                <a href="https://www.linkedin.com/in/aayushsahu2007/" target="_blank"
+                    class="modal-btn linkedin-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                    </svg>
+                    LinkedIn
+                </a>
+                <a href="https://www.instagram.com/aayxshhh._/" target="_blank" class="modal-btn insta-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.332 3.608 1.308.975.975 1.245 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.063 1.366-.333 2.633-1.308 3.608-.975.975-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.332-3.608-1.308-.975-.975-1.245-2.242-1.308-3.608-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.063-1.366.333-2.633 1.308-3.608.975-.975 2.242-1.246 3.608-1.308 1.266-.058 1.646-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-1.366.062-2.633.333-3.608 1.308-.975.975-1.246 2.242-1.308 3.608-.058 1.28-.072 1.688-.072 4.947s.014 3.667.072 4.947c.062 1.366.333 2.633 1.308 3.608.975.975 2.242 1.246 3.608 1.308 1.28.058 1.688.072 4.947.072s3.667-.014 4.947-.072c1.366-.062-2.633-.333 3.608-1.308.975-.975 1.246-2.242 1.308-3.608.058-1.28.072-1.688.072-4.947s-.014-3.667-.072-4.947c-.062-1.366-.333-2.633-1.308-3.608-.975-.975-2.242-1.246-3.608-1.308-1.28-.058-1.688-.072-4.947-.072zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                    </svg>
+                    Instagram
+                </a>
+                <a href="mailto:ayushsahu093@gmail.com" class="modal-btn email-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="20" height="16" x="2" y="4" rx="2" />
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                    </svg>
+                    Email Me
+                </a>
+            </div>
+
+            <div class="modal-response-time">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" />
+                </svg>
+                I typically respond within 24-48 hours
+            </div>
+        </div>
+    </div>
+
+    <!-- Case Study Section -->
+    <section id="projects" class="projects-section">
+        <div class="projects-container">
+            <div class="project-header reveal-on-scroll">
+                <!-- Project Specific Stars (Violet Theme) -->
+                <svg class="star project-star-1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="#8b5cf6" transform="translate(50,50)">
+                        <rect x="-10" y="-45" width="20" height="90" rx="10" />
+                        <rect x="-10" y="-45" width="20" height="90" rx="10" transform="rotate(60)" />
+                        <rect x="-10" y="-45" width="20" height="90" rx="10" transform="rotate(120)" />
+                    </g>
+                </svg>
+
+                <span class="project-category">Case Study: E-Commerce</span>
+                <h2 class="project-title">Dinesh Grocery Store<span class="dot">.</span></h2>
+                <p class="project-tagline">Scaling retail with headless precision and sub-second performance.</p>
+                
+                <svg class="star project-star-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="#8b5cf6" transform="translate(50,50)">
+                        <rect x="-10" y="-45" width="20" height="90" rx="10" />
+                        <rect x="-10" y="-45" width="20" height="90" rx="10" transform="rotate(60)" />
+                        <rect x="-10" y="-45" width="20" height="90" rx="10" transform="rotate(120)" />
+                    </g>
+                </svg>
+            </div>
+
+            <div class="project-showcase">
+                <div class="project-main-image reveal-on-scroll reveal-left">
+                    <div class="browser-mockup">
+                        <div class="browser-header">
+                            <div class="browser-dots">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <div class="browser-address">dineshgrocerystore.netlify.app</div>
+                        </div>
+                        <div class="browser-body">
+                            <img src="./projects1/ecommerce front page.png" alt="Dinesh Grocery Store Front Page" class="mockup-img">
+                        </div>
+                    </div>
+                    
+                    <!-- New bottom star -->
+                    <svg class="star project-star-3" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="#8b5cf6" transform="translate(50,50)">
+                            <path d="M0 -45 L12 -12 L45 0 L12 12 L0 45 L-12 12 L-45 0 L-12 -12 Z" />
+                        </g>
+                    </svg>
+                </div>
+
+                <div class="project-info reveal-on-scroll reveal-right">
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-value">100</span>
+                            <span class="stat-label">Performance</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">0.4s</span>
+                            <span class="stat-label">LCP</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">+35%</span>
+                            <span class="stat-label">Conversion</span>
+                        </div>
+                    </div>
+
+                    <div class="case-study-content">
+                        <div class="content-block">
+                            <h3>The Problem</h3>
+                            <p>Legacy monolithic platforms created significant friction in the user journey, resulting
+                                in high bounce rates and 40% cart abandonment due to sluggish load times and rigid UI
+                                components.</p>
+                        </div>
+
+                        <div class="content-block">
+                            <h3>The Solution</h3>
+                            <p>Developed a high-performance headless architecture using <strong>Next.js App
+                                    Router</strong> and <strong>Tailwind CSS v4</strong>. Implemented React Context API
+                                for lightweight global state management and Vercel Edge for localized delivery.</p>
+                        </div>
+
+                        <div class="tech-tags">
+                            <span>Next.js 15</span>
+                            <span>Tailwind v4</span>
+                            <span>Context API</span>
+                            <span>Vercel Edge</span>
+                            <span>Headless UI</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="https://dineshgrocerystore.netlify.app/" target="_blank" class="live-demo-btn">
+                                View Live Project
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/ayushsahu093-hue" target="_blank" class="github-link-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Project 2: AVRYAA Perfumes -->
+    <section id="project-avryaa" class="projects-section project-2-theme">
+        <div class="projects-container">
+            <div class="project-header reveal-on-scroll">
+                <span class="project-category">Case Study: Luxury E-commerce</span>
+                <h2 class="project-title">AVRYAA<span class="dot">.</span></h2>
+                <p class="project-tagline">Luxury scents, bottled with timeless elegance.</p>
+            </div>
+
+            <div class="project-showcase inverse">
+                <div class="project-info reveal-on-scroll reveal-left">
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-value">98</span>
+                            <span class="stat-label">UX Score</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">60%</span>
+                            <span class="stat-label">Faster Loading</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">2.4x</span>
+                            <span class="stat-label">Engagement</span>
+                        </div>
+                    </div>
+
+                    <div class="case-study-content">
+                        <div class="content-block">
+                            <h3>The Challenge</h3>
+                            <p>Luxury brands require an digital presence that feels as tactile and exclusive as their
+                                physical products. AVRYAA needed a high-conversion platform that maintained a minimal,
+                                premium aesthetic while handling high-resolution imagery.</p>
+                        </div>
+
+                        <div class="content-block">
+                            <h3>The Innovation</h3>
+                            <p>Developed a custom <strong>Next.js</strong> architecture with GSAP-driven scroll
+                                storytelling. Integrated a bespoke fragrance-finder quiz to personalize the user journey
+                                and increase conversion by 40%.</p>
+                        </div>
+
+                        <div class="tech-tags">
+                            <span>Next.js 15</span>
+                            <span>GSAP</span>
+                            <span>Stripe</span>
+                            <span>Tailwind v4</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="https://avyraperfumes.netlify.app/" target="_blank" class="live-demo-btn">
+                                View Project
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/ayushsahu093-hue/Avyra-perfume" target="_blank"
+                                class="github-link-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-main-image reveal-on-scroll reveal-right">
+                    <div class="browser-mockup">
+                        <div class="browser-header">
+                            <div class="browser-dots">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <div class="browser-address">avryaa.com</div>
+                        </div>
+                        <div class="browser-body">
+                            <img src="./projects2/landing page.png" alt="AVRYAA Perfumes" class="mockup-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project 3: MAAZA DRINKS -->
+    <section id="project-maaza" class="projects-section project-3-theme">
+        <div class="projects-container">
+            <div class="project-header reveal-on-scroll">
+                <span class="project-category">Case Study: Immersive Experience</span>
+                <h2 class="project-title">MAAZA<span class="dot">.</span></h2>
+                <p class="project-tagline">A liquid-smooth interactive journey through flavor.</p>
+            </div>
+
+            <div class="project-showcase">
+                <div class="project-info reveal-on-scroll reveal-left">
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-value">120</span>
+                            <span class="stat-label">FPS Fluidity</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">50%</span>
+                            <span class="stat-label">Retention</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">0.2s</span>
+                            <span class="stat-label">Input Lag</span>
+                        </div>
+                    </div>
+
+                    <div class="case-study-content">
+                        <div class="content-block">
+                            <h3>The Vision</h3>
+                            <p>Translating the "richness" of fruit drinks into a digital space. We created a
+                                scrollytelling experience that feels as vibrant and refreshing as the product itself.
+                            </p>
+                        </div>
+
+                        <div class="content-block">
+                            <h3>The Execution</h3>
+                            <p>Engineered using <strong>Next.js</strong> for a robust foundation and <strong>Framer
+                                    Motion</strong> for imperative scroll-mapping animations. The UI leverages
+                                <strong>Tailwind CSS</strong> for rapid, utility-first styling and <strong>Lucide
+                                    React</strong> for a consistent, beautiful icon set.</p>
+                        </div>
+
+                        <div class="tech-tags">
+                            <span>Next.js</span>
+                            <span>Framer Motion</span>
+                            <span>Tailwind CSS</span>
+                            <span>Lucide React</span>
+                            <span>React Context</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="https://maazza.netlify.app/" target="_blank" class="live-demo-btn">
+                                View Project
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/ayushsahu093-hue/kaza" target="_blank" class="github-link-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-main-image reveal-on-scroll reveal-right">
+                    <div class="browser-mockup">
+                        <div class="browser-header">
+                            <div class="browser-dots">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <div class="browser-address">maaza-drinks.io</div>
+                        </div>
+                        <div class="browser-body">
+                            <img src="./projects3/landing page.png" alt="MAAZA Drinks" class="mockup-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project 4: boAt Rockerz -->
+    <section id="project-boat" class="projects-section project-4-theme">
+        <div class="projects-container">
+            <div class="project-header reveal-on-scroll">
+                <span class="project-category">Case Study: Product Scrollytelling</span>
+                <h2 class="project-title">boAt Rockerz<span class="dot">.</span></h2>
+                <p class="project-tagline">Engineering a cinematic audio reveal through liquid-motion.</p>
+            </div>
+
+            <div class="project-showcase inverse">
+                <div class="project-info reveal-on-scroll reveal-left">
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-value">240</span>
+                            <span class="stat-label">Image Frames</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">Ultra</span>
+                            <span class="stat-label">Smooth Scroll</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">High</span>
+                            <span class="stat-label">Fidelity UI</span>
+                        </div>
+                    </div>
+
+                    <div class="case-study-content">
+                        <div class="content-block">
+                            <h3>The Challenge</h3>
+                            <p>Translating the tactile, premium experience of boAt headphones into a digital format. The
+                                goal was to create a "first-person" product reveal that feels immersive and high-end.
+                            </p>
+                        </div>
+
+                        <div class="content-block">
+                            <h3>The Innovation</h3>
+                            <p>Built using <strong>Next.js</strong> and <strong>Framer Motion</strong> for imperative
+                                scroll-mapping. Implemented a frame-by-frame canvas render to synchronize product
+                                rotations with user scroll velocity.</p>
+                        </div>
+
+                        <div class="tech-tags">
+                            <span>Next.js</span>
+                            <span>Framer Motion</span>
+                            <span>Canvas API</span>
+                            <span>Tailwind CSS</span>
+                            <span>Lucide Icons</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="https://boatrockerz.netlify.app/" target="_blank" class="live-demo-btn">
+                                View Project
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/ayushsahu093-hue" target="_blank" class="github-link-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-main-image reveal-on-scroll reveal-right">
+                    <div class="browser-mockup">
+                        <div class="browser-header">
+                            <div class="browser-dots">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <div class="browser-address">boat-rockerz.showcase</div>
+                        </div>
+                        <div class="browser-body">
+                            <img src="./projects4/rename page.png" alt="boAt Rockerz" class="mockup-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Why Work With Me Section -->
+    <section class="why-me-section reveal-on-scroll">
+        <div class="why-me-container">
+            <h2 class="why-me-heading reveal-on-scroll">Why work with me?</h2>
+            <p class="why-me-intro reveal-on-scroll">I create fast, responsive, and visually appealing web applications
+                using modern frontend technologies. My focus is on clean code, smooth user experience, and continuous
+                improvement.</p>
+
+            <div class="value-cards reveal-on-scroll">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="20" height="14" x="2" y="3" rx="2" />
+                            <line x1="8" x2="16" y1="21" y2="21" />
+                            <line x1="12" x2="12" y1="17" y2="21" />
+                        </svg>
+                    </div>
+                    <h3>Pixel-Perfect UI</h3>
+                    <p>Translating high-fidelity designs into fluid, responsive, and cross-browser interfaces.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6" />
+                            <polyline points="8 6 2 12 8 18" />
+                        </svg>
+                    </div>
+                    <h3>Modern Tech Stack</h3>
+                    <p>Building performant apps using Next.js, Framer Motion, and utility-first CSS styling.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21.21 15.89A10 10 0 1 1 8 2.83" />
+                            <path d="M22 12A10 10 0 0 0 12 2v10z" />
+                        </svg>
+                    </div>
+                    <h3>Data-Centric Logic</h3>
+                    <p>Bridging UI/UX with backend logic using Python (NumPy/Pandas) for data-rich applications.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m12 14 4-4" />
+                            <path d="M3.34 19a10 10 0 1 1 17.32 0" />
+                        </svg>
+                    </div>
+                    <h3>Algorithmic Base</h3>
+                    <p>Solving complex architectural challenges with strong C++ and logic foundations.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Violet Animated Stars -->
+        <svg class="star star-violet star-v1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#a66ef5" transform="translate(50,50)">
+                <rect x="-10" y="-45" width="20" height="90" rx="10" />
+                <rect x="-10" y="-45" width="20" height="90" rx="10" transform="rotate(60)" />
+                <rect x="-10" y="-45" width="20" height="90" rx="10" transform="rotate(120)" />
+            </g>
+        </svg>
+
+        <svg class="star star-violet star-v2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#a66ef5" transform="translate(50,50)">
+                <rect x="-10" y="-45" width="20" height="90" rx="10" />
+                <rect x="-10" y="-45" width="20" height="90" rx="10" transform="rotate(60)" />
+                <rect x="-10" y="-45" width="20" height="90" rx="10" transform="rotate(120)" />
+            </g>
+        </svg>
+
+        <svg class="star star-violet star-v3" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#a66ef5" transform="translate(50,50)">
+                <rect x="-10" y="-45" width="20" height="90" rx="10" />
+                <rect x="-10" y="-45" width="20" height="90" rx="10" transform="rotate(60)" />
+                <rect x="-10" y="-45" width="20" height="90" rx="10" transform="rotate(120)" />
+            </g>
+        </svg>
+    </section>
+
+    <!-- Blog Preview Section -->
+    <section class="blog-preview-section reveal-on-scroll">
+        <div class="blog-preview-container">
+            <h2 class="reveal-on-scroll">Latest Insights<span class="dot">.</span></h2>
+            <div class="blog-grid">
+                <!-- Featured Blog: Earning Online -->
+                <article class="blog-card reveal-on-scroll">
+                    <div class="blog-image">
+                        <img src="./blogs/blog1.png"
+                            alt="How Students Can Earn Money Online">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-tag">Finance</span>
+                        <h3>Earning Without Investment</h3>
+                        <p>A comprehensive guide on how students can start earning money online today.</p>
+                        <a href="https://medium.com/@sahuayush9039/how-students-can-earn-money-online-without-investment-2a60ace00778"
+                            target="_blank" class="blog-link">Read on Medium →</a>
+                    </div>
+                </article>
+
+                <!-- Blog 2 -->
+                <article class="blog-card reveal-on-scroll">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=600"
+                            alt="Blog 2">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-tag">UI/UX</span>
+                        <h3>Glassmorphism</h3>
+                        <p>Why translucent design is the future of luxury interfaces.</p>
+                        <a href="blog.html" class="blog-link transition-link">Read Post →</a>
+                    </div>
+                </article>
+
+                <!-- Blog 3 -->
+                <article class="blog-card reveal-on-scroll">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600"
+                            alt="Blog 3">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-tag">Perf</span>
+                        <h3>Mobile Speed</h3>
+                        <p>Optimizing heavy animations for low-end mobile devices.</p>
+                        <a href="blog.html" class="blog-link transition-link">Read Post →</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="blog-view-all reveal-on-scroll">
+                <a href="blog.html" class="glass-button transition-link">VIEW ALL POSTS</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Gate Section -->
+    <section class="services-gate reveal-on-scroll">
+        <div class="gate-content">
+            <h2 class="reveal-on-scroll">Elevate your digital presence<span class="dot">.</span></h2>
+            <p class="reveal-on-scroll">Beyond engineering, I provide strategic design and optimization services to help
+                your business scale.</p>
+            <div class="gate-actions reveal-on-scroll">
+                <a href="services.html" class="glass-button transition-link">EXPLORE SERVICES</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section reveal-on-scroll">
+        <div class="contact-container">
+            <div class="contact-info reveal-on-scroll">
+                <h2 class="reveal-on-scroll">Let's talk<span class="dot">.</span></h2>
+                <p class="reveal-on-scroll">I'm always open to discussing new projects, creative ideas or original
+                    visions. Feel free to reach out through the form or my social channels.</p>
+
+                <div class="social-links-grid reveal-on-scroll">
+                    <a href="mailto:ayushsahu093@gmail.com" class="social-link-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="20" height="16" x="2" y="4" rx="2" />
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                        </svg>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/aayushsahu2007/" target="_blank" class="social-link-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                            <rect width="4" height="12" x="2" y="9" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/ayushsahu093-hue" target="_blank" class="social-link-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                            <path d="M9 18c-4.51 2-5-2-7-2" />
+                        </svg>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.instagram.com/aayxshhh._/" target="_blank" class="social-link-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                        </svg>
+                        <span>Instagram</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-form-card reveal-on-scroll">
+                <form id="contact-form" action="https://formspree.io/f/xkoyrean" method="POST">
+                    <!-- Honeypot to prevent spam -->
+                    <input type="text" name="_gotcha" style="display:none" />
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="How can I help you?"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-text">SEND MESSAGE</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Ayush<span class="dot">.</span></h3>
+                <p>Building the next generation of digital experiences.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="https://github.com/ayushsahu093-hue" target="_blank">GitHub</a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ayush Sahu. Crafted with passion.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top-btn" id="scrollTopBtn" title="Go to top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 15l-6-6-6 6" />
+        </svg>
+    </button>
+
+    <div class="page-transition-curtain"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
