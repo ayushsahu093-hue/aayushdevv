@@ -3,7 +3,7 @@
 
 Welcome to my personal portfolio website!  
 This project showcases my skills, projects, and journey as a web developer.
-https://github.com/ayushsahu093-hue/aayushdevv/blob/73001f87ab5ad9588a85f5fcef1aaf2e3471d285/Screenshot%202026-05-07%20152102.png
+(https://github.com/ayushsahu093-hue/aayushdevv/blob/73001f87ab5ad9588a85f5fcef1aaf2e3471d285/Screenshot%202026-05-07%20152102.png)
 
 🔗 Live Demo: https://aayushhdevv.netlify.app/
 
